@@ -1,0 +1,108 @@
+.chartChkSpan {
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.chartChkDiv {
+    background-color: #eee;
+    display: inline-block;
+    clear: both;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.chartCanv {
+    visibility: hidden;
+    max-width: 600px;
+    max-height: 300px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.chartDiv {
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    clear: both;
+}
+#inputFields {
+    display: inline-block;
+    background-color: #eee;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#expDiv {
+    display: inline-block;
+    clear: both;
+    background-color: #eee;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+#chartsContainerDiv {
+    display: inline-block;
+    clear: both;
+    background-color: #eee;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+/* Style collapsible content (hidden by default) */
+.content {
+    display: block;
+    background-color: none;
+}
+/* Add a background color to the button if it is clicked (add the .active class with javascript), and on hover */
+collapsible.active, .collapsible:hover {
+    background-color: #ccc;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #d9d9d9;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-left: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#paramsBtn {
+    text-align: center;
+}
+#expWrap {
+    display: block;
+    clear: both;
+    margin-top: 10px;
+}
+#chartsWrap {
+    display: block;
+    clear: both;
+    margin-top: 10px;
+}
+#inputsWrap {
+    display: block;
+    clear: both;
+    margin-top: 10px;
+}

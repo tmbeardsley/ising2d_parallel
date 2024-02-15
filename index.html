@@ -1,0 +1,88 @@
+<html>
+    <head>
+    <title>Parallel 2D Ising Model simulations in the Browser - Tom Beardsley PhD</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/outputFields.css">
+    <link rel="stylesheet" href="./css/inputFieldsAndValidation.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    </head>
+
+    <body>
+    
+        <!-- A region that will contain programatically created input fields for parameters -->
+        <div id="inputsWrap">
+            <button id="paramsBtn" type="button" class="collapsible active">Parameters</button>
+            <div id="inputDiv" class="content">
+                <div id="inputFields">
+                </div>
+            </div>
+        </div>
+
+        <!-- A region that will contain programatically output fields for multiple experiments -->
+        <div id="expWrap">
+            <button id="expsBtn" type="button" class="collapsible active">Experiments</button>
+            <div id="expContent" class="content">
+                <div id='expDiv'>
+                    <span id="expTitleSpan">
+                        Set up an experiment by adjusting the parameters...
+                    </span>
+                    <div class='divResultsTree'>
+                        <ul id='exp_tree' class="tree">
+                        </ul>
+                    </div>
+                    <button id="dwnld" disabled>Download Data</button><span id="dwnldSpan"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Canvas elements to display charts. Checkboxes to show/hide charts -->
+        <div id="chartsWrap">
+            <button id="chartsBtn" type="button" class="collapsible active">Charts</button>
+            <div id="chrtContent" class="content">
+                <div id="chartsContainerDiv">
+
+                    <div id='chartChkDiv' class='chartChkDiv'>
+                        <span class='chartChkSpan'>
+                            <input type="checkbox" id="chkChartM" autocomplete="off">
+                            <label for="chkChartM">&lt;M&gt;/N</label>
+                        </span>
+                        <span class='chartChkSpan'>
+                            <input type="checkbox" id="chkChartUL" autocomplete="off">
+                            <label for="chkChartUL">UL</label>
+                        </span>
+                        <span class='chartChkSpan'>
+                            <input type="checkbox" id="chkChartCv" autocomplete="off">
+                            <label for="chkChartCv">Cv/kN</label>
+                        </span>
+                        <span class='chartChkSpan'>
+                            <input type="checkbox" id="chkChartchi" autocomplete="off">
+                            <label for="chkChartchi">&chi;J/N</label>
+                        </span>
+                        <span class='chartChkSpan'>
+                            <input type="checkbox" id="chkChartH" autocomplete="off">
+                            <label for="chkChartH">&lt;H&gt;/NkT</label>
+                        </span>
+                    </div><br>
+
+                    <div class="chartDiv">
+                        <canvas id="chartCanvM" class="chartCanv"></canvas>
+                        <canvas id="chartCanvUL" class="chartCanv"></canvas>
+                        <canvas id="chartCanvCv" class="chartCanv"></canvas>
+                        <canvas id="chartCanvchi" class="chartCanv"></canvas>
+                        <canvas id="chartCanvH" class="chartCanv"></canvas>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- javascript that does the heavy lifting, as well as a charting package -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+        <script src="./js/chartjsSetupFunctions.js"></script>
+        <script src="./js/inputFieldsAndValidation.js"></script>
+        <script src="./js/outputFields.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
+
